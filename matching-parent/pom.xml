@@ -12,6 +12,7 @@
         <module>../macthing-thread</module>
         <module>../matching-disruptor</module>
         <module>../matching-pattern</module>
+        <module>../matching-nio</module>
     </modules>
 
     <parent>
