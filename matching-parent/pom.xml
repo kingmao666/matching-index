@@ -9,10 +9,13 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>../macthing-thread</module>
         <module>../matching-disruptor</module>
         <module>../matching-pattern</module>
         <module>../matching-nio</module>
+        <module>../matching-rocketmq</module>
+        <module>../matching-mybatisplus</module>
+        <module>../matching-common</module>
+        <module>../matching-juc</module>
     </modules>
 
     <parent>
@@ -24,5 +27,43 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <mybatisplus.version>3.4.3.1</mybatisplus.version>
+        <mysql-connector.version>5.1.47</mysql-connector.version>
+        <mybatis-plus-generator.version>3.5.0</mybatis-plus-generator.version>
+        <lombok.version>1.18.20</lombok.version>
     </properties>
+
+    <!--全局依赖-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>utf8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
