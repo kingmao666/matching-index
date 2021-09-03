@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/macthing-thread/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/matching-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/matching-disruptor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/matching-juc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/matching-mybatisplus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/matching-nio/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/matching-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/matching-rocketmq/src/main/java" charset="UTF-8" />
   </component>
 </project>

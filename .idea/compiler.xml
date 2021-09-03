@@ -2,34 +2,46 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="macthing-thread" />
-        <module name="matching-nio" />
-        <module name="matching-disruptor" />
+        <module name="matching-juc" />
         <module name="matching-pattern" />
+        <module name="matching-mybatisplus" />
+        <module name="matching-nio" />
+        <module name="matching-common" />
+        <module name="matching-rocketmq" />
+        <module name="matching-disruptor" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="macthing-thread" target="1.8" />
-      <module name="matching-disruptor" target="8" />
+      <module name="macthing-juc" target="1.8" />
+      <module name="matching-common" target="1.8" />
+      <module name="matching-disruptor" target="1.8" />
       <module name="matching-disruptors" target="1.8" />
-      <module name="matching-nio" target="8" />
+      <module name="matching-juc" target="1.8" />
+      <module name="matching-mybatisplus" target="1.8" />
+      <module name="matching-nio" target="1.8" />
       <module name="matching-parent" target="1.8" />
-      <module name="matching-pattern" target="8" />
+      <module name="matching-pattern" target="1.8" />
+      <module name="matching-rocketmq" target="1.8" />
       <module name="matching-thread" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="macthing-thread" options="-parameters" />
+      <module name="macthing-juc" options="-parameters" />
+      <module name="matching-common" options="-parameters" />
       <module name="matching-disruptor" options="-parameters" />
       <module name="matching-disruptors" options="-parameters" />
+      <module name="matching-juc" options="-parameters" />
+      <module name="matching-mybatisplus" options="-parameters" />
       <module name="matching-nio" options="-parameters" />
-      <module name="matching-parent" options="-parameters" />
+      <module name="matching-parent" options="" />
       <module name="matching-pattern" options="-parameters" />
+      <module name="matching-rocketmq" options="-parameters" />
       <module name="matching-thread" options="-parameters" />
     </option>
   </component>

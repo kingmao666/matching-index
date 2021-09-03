@@ -1,29 +1,12 @@
+# DataSource Config
 spring:
   datasource:
-    base:
-      type: com.zaxxer.hikari.HikariDataSource
-      jdbc-url: jdbc:mysql://182.92.217.138:3306/exchange?rewriteBatchedStatements=true&autoReconnect=true
-      username: yiqinxuan
-      password: Lzslov123!
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      minimum-idle: 10
-      maximum-pool-size: 100
-      connectionTimeout: 60000
-    core:
-      type: com.zaxxer.hikari.HikariDataSource
-      jdbc-url: jdbc:mysql://182.92.217.138:3306/exchange?rewriteBatchedStatements=true&autoReconnect=true
-      username: yiqinxuan
-      password: Lzslov123!
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      minimum-idle: 10
-      maximum-pool-size: 100
-      connectionTimeout: 60000
-rocketmq:
-  namesrvAddr: 39.97.101.135:9876
+    driver-class-name: com.mysql.jdbc.Driver
+    jdbc-url: jdbc:mysql://182.92.217.138:3306/exchange?rewriteBatchedStatements=true&autoReconnect=true
+    username: yiqinxuan
+    password: Lzslov123!
 
+# Logger Config
 logging:
-  config: classpath:log4j2.xml
   level:
-    com.chainup: INFO
-    tk.mybatis: WARN
-    org.springframework: WARN
+    com.kingmao.mybatisplus: debug

@@ -1,7 +1,17 @@
 package com.kingmao.juc;
 
-public class T {
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+public class RunThread {
     public static void main(String[] args) {
-        System.out.println("dddsdf");
+        Thread t = new Thread("sdf"){
+            @Override
+            public void run() {
+                log.info("ddd");
+                log.error("fff");
+            }
+        };
+        t.start();
     }
 }
