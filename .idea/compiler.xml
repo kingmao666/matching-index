@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="matching-juc" />
+        <module name="matching-generator" />
         <module name="matching-pattern" />
         <module name="matching-mybatisplus" />
         <module name="matching-nio" />
@@ -21,6 +22,7 @@
       <module name="matching-common" target="1.8" />
       <module name="matching-disruptor" target="1.8" />
       <module name="matching-disruptors" target="1.8" />
+      <module name="matching-generator" target="1.8" />
       <module name="matching-juc" target="1.8" />
       <module name="matching-mybatisplus" target="1.8" />
       <module name="matching-nio" target="1.8" />
@@ -36,6 +38,7 @@
       <module name="matching-common" options="-parameters" />
       <module name="matching-disruptor" options="-parameters" />
       <module name="matching-disruptors" options="-parameters" />
+      <module name="matching-generator" options="-parameters" />
       <module name="matching-juc" options="-parameters" />
       <module name="matching-mybatisplus" options="-parameters" />
       <module name="matching-nio" options="-parameters" />

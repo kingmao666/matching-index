@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/matching-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/matching-disruptor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/matching-generator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/matching-juc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/matching-mybatisplus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/matching-nio/src/main/java" charset="UTF-8" />

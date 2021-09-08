@@ -10,6 +10,7 @@
       <set>
         <option value="$PROJECT_DIR$/macthing-juc/pom.xml" />
         <option value="$PROJECT_DIR$/matching-disruptors/pom.xml" />
+        <option value="$PROJECT_DIR$/matching-parent/matching-generator/pom.xml" />
         <option value="$PROJECT_DIR$/matching-thread/pom.xml" />
       </set>
     </option>
