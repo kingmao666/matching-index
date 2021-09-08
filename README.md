@@ -1,2 +1,2 @@
 # matching-index
-basic skils of matching
+base matching
