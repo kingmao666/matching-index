@@ -1,6 +1,6 @@
-package quickstart.disruptor.input.event;
+package disruptor.spring.input.event;
 
-public enum OrderEventType {
+public enum InputEventType {
     //正常
     NORMAL,
     //需要取消
@@ -11,6 +11,7 @@ public enum OrderEventType {
     MARKET_ORDER_RETURN,
     //定时任务
     REFRESH_REBUILD,
+
     //清除内存异常单(异常单时清除内存的订单)
     CLEAN_MEMORY_INVALID
 }

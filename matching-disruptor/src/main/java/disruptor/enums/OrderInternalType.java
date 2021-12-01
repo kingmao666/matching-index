@@ -1,4 +1,4 @@
-package quickstart.entity;
+package disruptor.enums;
 
 public enum OrderInternalType {
     /**
@@ -14,7 +14,7 @@ public enum OrderInternalType {
     /**
      * 止盈止损委托订单类型
      */
-    STOP(3, "止盈止损委托");
+    STOP(3,"止盈止损委托");
 
     private int value;
     private String description;

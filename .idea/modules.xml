@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/matching-common/matching-common.iml" filepath="$PROJECT_DIR$/matching-common/matching-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/matching-disruptor/matching-disruptor.iml" filepath="$PROJECT_DIR$/matching-disruptor/matching-disruptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matching-disruptor-springboot/matching-disruptor-springboot.iml" filepath="$PROJECT_DIR$/matching-disruptor-springboot/matching-disruptor-springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/matching-generator/matching-generator.iml" filepath="$PROJECT_DIR$/matching-generator/matching-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/matching-juc/matching-juc.iml" filepath="$PROJECT_DIR$/matching-juc/matching-juc.iml" />
       <module fileurl="file://$PROJECT_DIR$/matching-mybatisplus/matching-mybatisplus.iml" filepath="$PROJECT_DIR$/matching-mybatisplus/matching-mybatisplus.iml" />

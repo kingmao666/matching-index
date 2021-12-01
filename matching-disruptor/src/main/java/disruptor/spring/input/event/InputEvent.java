@@ -1,10 +1,10 @@
-package quickstart.disruptor.input.event;
+package disruptor.spring.input.event;
 
+import disruptor.entity.Order;
 import lombok.Data;
-import quickstart.entity.Order;
 
 @Data
-public class OrderEvent {
+public class InputEvent {
     /**
      * 输入的执行订单
      */
@@ -13,7 +13,7 @@ public class OrderEvent {
     /**
      * 输入事件类型。通过验证订单确认
      */
-    private OrderEventType orderEventType;
+    private InputEventType inputEventType;
 
     /**
      * 事件类型消息
@@ -32,7 +32,7 @@ public class OrderEvent {
 
     public void clean(){
         this.executedOrder = null;
-        this.orderEventType = null;
+        this.inputEventType = null;
         this.message = "";
         this.flowLog = "";
         this.symbol = "";

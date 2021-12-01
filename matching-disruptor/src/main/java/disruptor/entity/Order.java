@@ -1,10 +1,10 @@
-package quickstart.entity;
+package disruptor.entity;
 
 import com.google.common.base.Preconditions;
-
+import disruptor.enums.OrderInternalType;
+import disruptor.enums.Side;
 import lombok.Data;
 import lombok.extern.log4j.Log4j2;
-import quickstart.enums.Side;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -63,44 +63,28 @@ public class Order implements Cloneable {
 
     private String symbol;
 
-    /**
-     * 1:常规订单，2 杠杆订单  (默认1)
-     */
+    /** 1:常规订单，2 杠杆订单  (默认1) */
     private int orderType;
 
-    /**
-     * 公司ID
-     */
+    /** 公司ID */
     private Integer companyId;
 
-    /**
-     * 是否是最后一条Order
-     */
+    /** 是否是最后一条Order */
     private Long rebuildOffset;
 
-    /**
-     * 是否为从数据库加载的订单
-     */
+    /** 是否为从数据库加载的订单 */
     private boolean isRebuild = false;
 
-    /**
-     * 是否为取消单
-     */
+    /** 是否为取消单 */
     private boolean isCancel = false;
 
-    /**
-     * 取消单列表
-     */
+    /** 取消单列表 */
     private TreeSet<Order> cancelSet;
 
-    /**
-     * 主动单定序ID
-     */
+    /** 主动单定序ID */
     private Long offset;
 
-    /**
-     * 订单剩余数量
-     */
+    /** 订单剩余数量 */
     private BigDecimal remainAmount = new BigDecimal("0");
 
     @Override
@@ -116,21 +100,6 @@ public class Order implements Cloneable {
 
     public BigDecimal getUnfilledQuantity() {
         return this.volume.subtract(this.dealVolume);
-    }
-
-    public boolean isFilled() {
-        if (this.isLimitOrder()) {
-            return getUnfilledQuantity().compareTo(PairConfig.MIN_TRADE_VOL) < 0;
-        } else if (this.isMarketOrder()) {
-            if (Side.BUY.equals(this.getSide())) {
-                BigDecimal unfilledAmount = this.volume.subtract(this.dealMoney);
-                return unfilledAmount.compareTo(PairConfig.MIN_TRADE_AMOUNT) < 0;
-            } else {
-                return getUnfilledQuantity().compareTo(PairConfig.MIN_TRADE_VOL) < 0;
-            }
-        }
-
-        return false;
     }
 
     public boolean isLimitOrder() {
